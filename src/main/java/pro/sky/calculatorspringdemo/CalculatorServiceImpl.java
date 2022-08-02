@@ -28,7 +28,7 @@ public class CalculatorServiceImpl implements CalculatorService {
     @Override
     public String calculateDivide(int num1, int num2) throws IllegalArgumentException {
         if (num2 == 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Неверное значение второго параметра. На ноль делить нельзя");
         }
         return String.valueOf((double) num1 / num2);
     }
